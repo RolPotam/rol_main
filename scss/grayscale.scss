@@ -132,17 +132,17 @@ a {
 
   width: 100%;
   height: auto;
-  padding: 200px 0;
+  padding: 100px 0;
 
   text-align: center;
 
   color: white;
   background: url('../img/intro-bg.jpg') no-repeat bottom center scroll;
   background-color: black;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  -webkit-background-size: auto;
+  -moz-background-size: auto;
+  -o-background-size: auto;
+  background-size: auto;
   .intro-body {
     display: table-cell;
 
@@ -154,7 +154,7 @@ a {
       font-size: 18px;
     }
   }
-  @media(min-width:768px) {
+  @media(min-width:600px) {
     height: 100%;
     padding: 0;
     .intro-body {
