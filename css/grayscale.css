@@ -1,3 +1,10 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100);
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 body {
   font-family: 'Lora', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   position: relative;
@@ -11,8 +18,80 @@ html {
   width: 100%;
   height: 100%;
 }
+#aa_particles {
+    z-index: 4;
+    height: 150%;
+    height: 150vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)) ,url("../img/intro-bg.jpg");
+    background-size: cover;
+}
 
-h1,
+.aa_sec {
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    right: 0;
+    left: 0;
+    margin: 0  auto;
+}
+
+.aa_txt {
+    font: 100 10vh/1 Roboto;
+    text-align: center;
+    color: #674172;
+}
+
+.aa_inner {
+    padding: 0 2rem;
+    font-size: 60%;
+    text-transform: uppercase;
+    background: #ffffff;
+}
+
+.aa_of {
+    padding: 1rem;
+    color: #ffffff;
+    background: #000000;
+}
+
+.aa_ahmadawais {
+    display: table;
+    width: 100%;
+    vertical-align: bottom;
+    margin: 5rem 0 5rem;
+    text-align: center;
+    background: #674172;
+    color: #ffffff;
+    font: 100 2vh/2 Roboto;
+}
+.aa_ahmadawais a {
+    color: #cccccc;
+    text-decoration: none;
+    border-bottom: 1px solid #cccccc;
+}
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
+
+
+h1 {
+    text-transform: uppercase;
+    font-size: 95px;
+    font-weight: 700;
+    letter-spacing: 0.015em;
+    color: white
+}
+h1::after {
+    content: '';
+    width: 80px;
+    display: block;
+    background: #fff;
+    height: 10px;
+    margin: 30px auto;
+    line-height: 1.1;
+}
+
 h2,
 h3,
 h4,
@@ -23,6 +102,7 @@ h6 {
   margin: 0 0 35px;
   letter-spacing: 1px;
   text-transform: uppercase;
+  color: white
 }
 
 p {
@@ -30,6 +110,7 @@ p {
   line-height: 1.5;
   margin: 0 0 25px;
 }
+
 
 @media (min-width: 768px) {
   p {
@@ -224,7 +305,14 @@ a:focus, a:hover {
   border: 1px solid #42DCA3;
   background-color: transparent;
 }
-
+#intro {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    padding: 0 20px;
+    width: 100%;
+    text-align: center;
+}
 .btn-default:focus, .btn-default:hover {
   color: black;
   border: 1px solid #42DCA3;
@@ -280,4 +368,13 @@ img::selection {
 
 img::-moz-selection {
   background: transparent;
+}
+
+#particles-js{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)) ,url("../img/intro-bg.jpg");
+    background-size: cover;
+    
 }
